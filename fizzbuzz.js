@@ -34,91 +34,117 @@ console.log('veikia')
 
 // 1-5 tasks
 
-function fizzbuzz(){
+// function fizzbuzz(){
 
-    for (let i = 1; i <= 1000; i++) {
+//     for (let i = 1; i <= 200; i++) {
         
-        if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0) {
-            console.log('FizzBuzzBiff')
+//         if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0) {
+//             console.log('FizzBuzzBiff')
         
-        } else if (i % 5 === 0 && i % 3 === 0) {
-            console.log('FizzBuzz')
+//         } else if (i % 3 === 0 && i % 5 === 0) {
+//             console.log('FizzBuzz')
     
-        } else if (i % 7 === 0 && i % 3 === 0) {
-            console.log('FizzBiff')
+//         } else if (i % 3 === 0 && i % 7 === 0) {
+//             console.log('FizzBiff')
         
-        } else if (i % 7 === 0 && i % 5 === 0) {
-            console.log('BuzzBiff')
+//         } else if (i % 5 === 0 && i % 7 === 0) {
+//             console.log('BuzzBiff')
 
-        } else if (i % 3 === 0) {
-            console.log('Fizz')
+//         } else if (i % 3 === 0) {
+//             console.log('Fizz')
 
-        } else if (i % 5 === 0) {
-            console.log('Buzz')
+//         } else if (i % 5 === 0) {
+//             console.log('Buzz')
         
-        } else if (i % 7 === 0) {
-            console.log('Biff')
+//         } else if (i % 7 === 0) {
+//             console.log('Biff')
         
-        } else {
-            console.log(i)
-        } 
-    }  
-}
+//         } else {
+//             console.log(i)
+//         } 
+//     }  
+// }
 
-fizzbuzz()
+// fizzbuzz()
 
 // 6. Skaičiai, kurie dalinasi iš 9, turi būti pakeisti į žodį „Fuzz".
 
+// function fizzbuzz(){
+
+//     for (let i = 1; i <= 1000; i++) {
+        
+//         if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0 && 9 === 0) {
+//             console.log('FizzBuzzBiffFuzz')
+        
+//         } else if (i % 3 === 0 && i % 5 === 0 && 9 === 0) {
+//             console.log('FizzBuzzFuzz')
+    
+//         } else if (i % 3 === 0 && i % 7 === 0 && 9 === 0) {
+//             console.log('FizzBiffFuzz')
+        
+//         } else if (i % 5 === 0 && i % 7 === 0 && 9 === 0) {
+//             console.log('BuzzBiffFuzz')
+
+//         } else if (i % 7 === 0 && i % 9 === 0) {
+//             console.log('BiffFuzz')
+
+//         } else if (i % 5 === 0 && i % 9 === 0) {
+//             console.log('BuzzFuzz')
+
+//         } else if (i % 5 === 0 && i % 7 === 0) {
+//             console.log('BuzzBiff')
+            
+//         } else if (i % 3 === 0 && i % 5 === 0) {
+//             console.log('FizzBuzz')
+
+//         } else if (i % 3 === 0 && i % 9 === 0) {
+//             console.log('FizzFuzz')
+
+//         } else if (i % 3 === 0 && i % 7 === 0) {
+//             console.log('FizzBiff')
+
+//         } else if (i % 3 === 0) {
+//             console.log('Fizz')
+
+//         } else if (i % 5 === 0) {
+//             console.log('Buzz')
+
+//         } else if (i % 7 === 0) {
+//             console.log('Biff')
+
+//         } else if (i % 9 === 0) {
+//             console.log('Fuzz')
+
+//         } else {
+//             console.log(i)
+//         }      
+//     }  
+// }
+
+// fizzbuzz()
+
+//7. Skaičiai, kurie dalinasi iš 11, turi būti pakeisti į žodį „Bizz". Ir sutrumpinti
+
 function fizzbuzz(){
 
     for (let i = 1; i <= 1000; i++) {
-        
-        if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0 && 9 === 0) {
-            console.log('FizzBuzzBiffFuzz')
-        
-        } else if (i % 5 === 0 && i % 3 === 0 && 9 === 0) {
-            console.log('FizzBuzzFuzz')
     
-        } else if (i % 7 === 0 && i % 3 === 0 && 9 === 0) {
-            console.log('FizzBiffFuzz')
+        let output = "";
+
+        if (i % 3 === 0) output += "Fizz"; //kai toje pacioje eiluteje, galima nedeti riestiniu skliaustu.
+      
+        if (i % 5 === 0) output += "Buzz";
+      
+        if (i % 7 === 0) output += "Biff";
+      
+        if (i % 9 === 0) output += "Fuzz";
+      
+        if (i % 11 === 0) output += "Bizz";
         
-        } else if (i % 7 === 0 && i % 5 === 0 && 9 === 0) {
-            console.log('BuzzBiffFuzz')
+        if (!output) output = i
 
-        } else if (i % 7 === 0 && i % 9 === 0) {
-            console.log('BiffFuzz')
-
-        } else if (i % 5 === 0 && i % 9 === 0) {
-            console.log('BuzzFuzz')
-
-        } else if (i % 5 === 0 && i % 7 === 0) {
-            console.log('BuzzBiff')
-            
-        } else if (i % 3 === 0 && i % 5 === 0) {
-            console.log('FizzBuzz')
-
-        } else if (i % 3 === 0 && i % 9 === 0) {
-            console.log('FizzFuzz')
-
-        } else if (i % 3 === 0 && i % 7 === 0) {
-            console.log('FizzBiff')
-
-        } else if (i % 3 === 0) {
-            console.log('Fizz')
-
-        } else if (i % 5 === 0) {
-            console.log('Buzz')
-
-        } else if (i % 7 === 0) {
-            console.log('Biff')
-
-        } else if (i % 9 === 0) {
-            console.log('Fuzz')
-
-        } else {
-            console.log(i)
-        }      
-    }  
-}
+        console.log(output);
+      }
+    }
 
 fizzbuzz()
